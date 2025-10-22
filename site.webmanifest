@@ -1,0 +1,20 @@
+{
+    "name": "abovearchitects.com",
+    "short_name": "abovearchitects",
+    "icons": [
+      {
+        "src": "IMG/AboveLogo.png",
+        "sizes": "192x192",
+        "type": "image/ico"
+      },
+      {
+        "src": "./IMG/AboveLogo.png",
+        "sizes": "512x512",
+        "type": "image/ico"
+      }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+  }
+  
