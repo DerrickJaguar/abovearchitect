@@ -37,7 +37,9 @@
   img {
     width: 100% !important;
     height: 70% !important; }
-
+     .sm-mt{
+        margin-top: 3rem;
+    }
   #showcase #navbar {
     display: flex;
     flex-direction: column;
