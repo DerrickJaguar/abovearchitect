@@ -75,12 +75,23 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
     <title>
       Above Architects - Excellence in Architecture & Design | Uganda
     </title>
   </head>
 
   <body class="font-sans text-gray-800 antialiased">
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="loader-content">
+        <div class="spinner"></div>
+        <p class="loader-text">Above Architects</p>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <nav
       id="navbar"
@@ -371,6 +382,7 @@
             ></i>
             <h3
               class="text-primary group-hover:text-white font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2 transition-colors"
+              data-count
             >
               29
             </h3>
@@ -391,6 +403,7 @@
             ></i>
             <h3
               class="text-primary group-hover:text-white font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2 transition-colors"
+              data-count
             >
               27,698
             </h3>
@@ -411,6 +424,7 @@
             ></i>
             <h3
               class="text-primary group-hover:text-white font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2 transition-colors"
+              data-count
             >
               57
             </h3>
@@ -431,6 +445,7 @@
             ></i>
             <h3
               class="text-primary group-hover:text-white font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2 transition-colors"
+              data-count
             >
               3
             </h3>
@@ -633,27 +648,9 @@
         once: true,
         offset: 100,
       });
-
-      // Mobile Menu Toggle
-      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      mobileMenuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-        const icon = mobileMenuBtn.querySelector("i");
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-times");
-      });
-
-      // Navbar Scroll Effect
-      window.addEventListener("scroll", () => {
-        const navbar = document.getElementById("navbar");
-        if (window.scrollY > 100) {
-          navbar.classList.add("shadow-2xl");
-        } else {
-          navbar.classList.remove("shadow-2xl");
-        }
-      });
     </script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,447 @@
+/* ==========================================
+   Above Architects - Custom Styles
+   ========================================== */
+
+/* ==========================================
+   1. SMOOTH ANIMATIONS & TRANSITIONS
+   ========================================== */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page transitions */
+body {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* ==========================================
+   2. CUSTOM SCROLLBAR
+   ========================================== */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f6f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4633f;
+  border-radius: 6px;
+  border: 2px solid #f8f6f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2c3e50;
+}
+
+/* ==========================================
+   3. ENHANCED HOVER EFFECTS
+   ========================================== */
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s;
+  z-index: 1;
+}
+
+.project-card:hover::before {
+  left: 100%;
+}
+
+.project-card img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover img {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* ==========================================
+   4. LOADING ANIMATION
+   ========================================== */
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2c3e50 0%, #1a3a52 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #d4633f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-text {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ==========================================
+   5. PARALLAX EFFECTS
+   ========================================== */
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* ==========================================
+   6. GLASS MORPHISM
+   ========================================== */
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(44, 62, 80, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================
+   7. BUTTON EFFECTS
+   ========================================== */
+
+.btn-hover-slide {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-hover-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+  z-index: -1;
+}
+
+.btn-hover-slide:hover::before {
+  left: 100%;
+}
+
+/* ==========================================
+   8. TEXT GRADIENT
+   ========================================== */
+
+.text-gradient {
+  background: linear-gradient(135deg, #d4633f 0%, #2c3e50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-accent {
+  background: linear-gradient(135deg, #d4633f 0%, #f39c12 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ==========================================
+   9. CARD ELEVATION
+   ========================================== */
+
+.card-elevated {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07),
+              0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-elevated:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15),
+              0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+}
+
+/* ==========================================
+   10. SECTION DIVIDERS
+   ========================================== */
+
+.section-divider {
+  position: relative;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #d4633f 0%, #2c3e50 100%);
+  border-radius: 2px;
+}
+
+/* ==========================================
+   11. FLOATING ANIMATION
+   ========================================== */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ==========================================
+   12. IMAGE REVEAL EFFECT
+   ========================================== */
+
+.image-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-reveal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #d4633f;
+  transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-reveal.revealed::after {
+  left: 100%;
+}
+
+/* ==========================================
+   13. NAVBAR ENHANCEMENTS
+   ========================================== */
+
+.navbar-scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link-underline {
+  position: relative;
+}
+
+.nav-link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d4633f;
+  transition: width 0.3s ease;
+}
+
+.nav-link-underline:hover::after,
+.nav-link-underline.active::after {
+  width: 100%;
+}
+
+/* ==========================================
+   14. FORM ENHANCEMENTS
+   ========================================== */
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #d4633f;
+  box-shadow: 0 0 0 3px rgba(212, 99, 63, 0.1);
+}
+
+.form-floating {
+  position: relative;
+}
+
+.form-floating label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+  pointer-events: none;
+  color: #6b7280;
+}
+
+.form-floating input:focus + label,
+.form-floating input:not(:placeholder-shown) + label,
+.form-floating textarea:focus + label,
+.form-floating textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 0.75rem;
+  color: #d4633f;
+  background: white;
+  padding: 0 4px;
+}
+
+/* ==========================================
+   15. MOBILE OPTIMIZATIONS
+   ========================================== */
+
+@media (max-width: 768px) {
+  /* Prevent zoom on input focus (iOS) */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font-size: 16px;
+  }
+  
+  /* Better touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Smooth mobile animations */
+  .card-elevated:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* ==========================================
+   16. CUSTOM UTILITIES
+   ========================================== */
+
+.clip-path-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+.clip-path-wave {
+  clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+.bg-pattern {
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(212, 99, 63, 0.03) 35px, rgba(212, 99, 63, 0.03) 70px);
+}
+
+/* ==========================================
+   17. SELECTION HIGHLIGHT
+   ========================================== */
+
+::selection {
+  background: #d4633f;
+  color: white;
+}
+
+::-moz-selection {
+  background: #d4633f;
+  color: white;
+}
+
+/* ==========================================
+   18. PRINT STYLES
+   ========================================== */
+
+@media print {
+  .no-print,
+  nav,
+  footer,
+  .whatsapp-btn {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    color: black;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+}

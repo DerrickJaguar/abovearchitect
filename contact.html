@@ -45,9 +45,16 @@
       crossorigin="anonymous"
     ></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css" />
     <title>Contact Us - Above Architects Uganda</title>
   </head>
   <body class="font-sans text-gray-800 antialiased bg-light">
+    <div class="page-loader">
+      <div class="loader-content">
+        <div class="spinner"></div>
+        <p class="loader-text">Above Architects</p>
+      </div>
+    </div>
     <nav
       id="navbar"
       class="fixed top-0 left-0 w-full bg-primary/95 backdrop-blur-md z-50 shadow-lg"
@@ -524,42 +531,9 @@
         once: true,
         offset: 100,
       });
-      document
-        .getElementById("mobile-menu-btn")
-        .addEventListener("click", () => {
-          const menu = document.getElementById("mobile-menu");
-          menu.classList.toggle("hidden");
-          const icon = document
-            .getElementById("mobile-menu-btn")
-            .querySelector("i");
-          icon.classList.toggle("fa-bars");
-          icon.classList.toggle("fa-times");
-        });
-
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const formData = new FormData(this);
-          const name = formData.get("name");
-          const email = formData.get("email");
-          const subject = formData.get("subject");
-          const message = formData.get("message");
-
-          // Create mailto link
-          const mailtoLink = `mailto:abovearchitects@gmail.com?subject=${encodeURIComponent(
-            subject
-          )}&body=${encodeURIComponent(
-            `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-          )}`;
-          window.location.href = mailtoLink;
-
-          // Show success message
-          alert(
-            "Thank you for your message! Your default email client will open. If it doesn't, please email us directly at abovearchitects@gmail.com"
-          );
-          this.reset();
-        });
     </script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
   </body>
 </html>
