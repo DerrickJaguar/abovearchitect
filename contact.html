@@ -1,92 +1,562 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Above Architects - Get in touch for your architectural needs in Uganda. We're here to bring your vision to life"
+    />
+    <meta
+      name="keywords"
+      content="Contact Above Architects, architecture consultation Uganda, Kampala architects contact"
+    />
+    <link rel="icon" type="image/png" href="IMG/AboveLogo.png" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Architecture Website" content="Best Architecture In World">
-    <meta keys="Architecture || Idea || Issue">
-    <script src="https://kit.fontawesome.com/707ca0a07c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/mobile.css">
-    <title>Contact Us</title>
-    <link rel="shortcut icon" href="IMG/AboveLogo.png" type="image/above-icon">
-</head>
-
-<body>
-    <header id="project">
-        <nav id="navbar">
-            <h3>Above Architects</h3>
-            <ul>
-                <li><a href="index.html" style="cursor: pointer;">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="contact-a" style="padding-block: 200px;" class="sm-mt">
-        <div class="container">
-            <h1 class="py-1">Contact Us</h1>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="form-group">
-                    <label for="number">Phone Number:</label>
-                    <input type="text" name="number" id="number">
-                </div>
-                <div class="form-group">
-                    <label for="textarea">Message:</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <a href="mailto:abovearchitects@gmail.com" class="btn btn-dark">Submit</a>
-            </form>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2c3e50",
+              accent: "#d4633f",
+              secondary: "#8b9d83",
+              dark: "#1a3a52",
+              light: "#f8f6f3",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Playfair Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/707ca0a07c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Contact Us - Above Architects Uganda</title>
+  </head>
+  <body class="font-sans text-gray-800 antialiased bg-light">
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full bg-primary/95 backdrop-blur-md z-50 shadow-lg"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a
+            href="index.html"
+            class="text-white font-display text-2xl lg:text-3xl font-bold tracking-wide hover:text-accent transition-colors"
+            >Above Architects</a
+          >
+          <ul class="hidden md:flex items-center space-x-8">
+            <li>
+              <a
+                href="index.html"
+                class="text-white font-medium hover:text-accent transition-colors relative group"
+                >Home<span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="project.html"
+                class="text-white font-medium hover:text-accent transition-colors relative group"
+                >Projects<span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-white font-medium hover:text-accent transition-colors relative group"
+                >About Us<span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="text-white font-medium hover:text-accent transition-colors relative group"
+                >Blog<span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="bg-accent text-white px-6 py-2.5 rounded font-semibold"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
         </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-primary/98 backdrop-blur-md"
+      >
+        <ul class="px-6 py-4 space-y-3">
+          <li>
+            <a
+              href="index.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="project.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block bg-accent text-white px-6 py-2.5 rounded font-semibold text-center"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      class="pt-32 pb-20 bg-gradient-to-br from-primary to-dark text-white"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-8 text-center"
+        data-aos="fade-up"
+      >
+        <h1
+          class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+        >
+          Contact Us
+        </h1>
+        <p class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+          Let's discuss your architectural vision and bring it to life
+        </p>
+      </div>
     </section>
 
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div data-aos="fade-right">
+            <h2
+              class="text-primary font-display text-3xl md:text-4xl font-bold mb-6"
+            >
+              Get In Touch
+            </h2>
+            <p class="text-gray-600 text-lg mb-8">
+              Have a project in mind? We'd love to hear from you. Send us a
+              message and we'll respond as soon as possible.
+            </p>
 
-    <footer id="main-footer">
-        <div class="container text-center">
-            <img src="photos/AboveLogo.png" alt="" style="width: 195px;height: 51px;">
-            <ul>
-                <li>
-                    &copy; 2025 AboveArchitects. All rights reserved.
-                </li>
-                <ul class="social-footer" style="list-style: none; display: flex; gap: 15px; padding: 0;">
-                  <li>
-                    <a href="https://www.instagram.com/abovearchitects?igsh=MTg5anB6dHpnbzZncA==" target="_blank" aria-label="Instagram">
-                      <i class="fab fa-instagram" style="font-size: 24px; color: #E1306C;"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/AshabaBenard?t=I6Y5ZosNcO9kdenc-3gTwg&s=08" target="_blank" aria-label="Twitter">
-                      <i class="fab fa-twitter" style="font-size: 24px; color: #1DA1F2;"></i>
-                      
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.facebook.com/Abovearchitects?mibextid=ZbWKwL" target="_blank" aria-label="Facebook">
-                      <i class="fab fa-facebook" style="font-size: 24px; color: #1877F2;"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/@abovearchitects" target="_blank" aria-label="YouTube">
-                      <i class="fab fa-youtube" style="font-size: 24px; color: #FF0000;"></i>
-                    </a>
-                  </li>
-                </ul>
-                
-            </ul>
+            <div class="space-y-6 mb-8">
+              <div class="flex items-start space-x-4">
+                <div class="bg-accent/10 p-4 rounded-full">
+                  <i class="fas fa-envelope text-2xl text-accent"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg text-primary mb-1">Email</h3>
+                  <a
+                    href="mailto:abovearchitects@gmail.com"
+                    class="text-gray-600 hover:text-accent transition-colors"
+                    >abovearchitects@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-accent/10 p-4 rounded-full">
+                  <i class="fas fa-phone text-2xl text-accent"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg text-primary mb-1">Phone</h3>
+                  <p class="text-gray-600">+256 XXX XXX XXX</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-accent/10 p-4 rounded-full">
+                  <i class="fas fa-map-marker-alt text-2xl text-accent"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg text-primary mb-1">
+                    Location
+                  </h3>
+                  <p class="text-gray-600">
+                    Kampala, Uganda<br />Serving clients nationwide
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="bg-accent/10 p-4 rounded-full">
+                  <i class="fas fa-clock text-2xl text-accent"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg text-primary mb-1">
+                    Office Hours
+                  </h3>
+                  <p class="text-gray-600">
+                    Monday - Friday: 8:00 AM - 6:00 PM<br />Saturday: 9:00 AM -
+                    2:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex space-x-4">
+              <a
+                href="https://www.instagram.com/abovearchitects?igsh=MTg5anB6dHpnbzZncA=="
+                target="_blank"
+                class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-all duration-300"
+                ><i class="fab fa-instagram text-xl"></i
+              ></a>
+              <a
+                href="https://x.com/AshabaBenard?t=I6Y5ZosNcO9kdenc-3gTwg&s=08"
+                target="_blank"
+                class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-all duration-300"
+                ><i class="fab fa-twitter text-xl"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/Abovearchitects?mibextid=ZbWKwL"
+                target="_blank"
+                class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-all duration-300"
+                ><i class="fab fa-facebook text-xl"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@abovearchitects"
+                target="_blank"
+                class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-all duration-300"
+                ><i class="fab fa-youtube text-xl"></i
+              ></a>
+            </div>
+          </div>
+
+          <div data-aos="fade-left">
+            <form id="contact-form" class="bg-white p-8 rounded-lg shadow-xl">
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 font-semibold mb-2"
+                  >Full Name *</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                  placeholder="John Doe"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="email"
+                  class="block text-gray-700 font-semibold mb-2"
+                  >Email Address *</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                  placeholder="john@example.com"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="phone"
+                  class="block text-gray-700 font-semibold mb-2"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                  placeholder="+256 XXX XXX XXX"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="subject"
+                  class="block text-gray-700 font-semibold mb-2"
+                  >Subject *</label
+                >
+                <select
+                  id="subject"
+                  name="subject"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+                >
+                  <option value="">Select a subject</option>
+                  <option value="residential">Residential Project</option>
+                  <option value="commercial">Commercial Project</option>
+                  <option value="consultation">General Consultation</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-gray-700 font-semibold mb-2"
+                  >Message *</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all resize-none"
+                  placeholder="Tell us about your project..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <i class="fas fa-paper-plane mr-2"></i> Send Message
+              </button>
+
+              <p class="text-sm text-gray-500 mt-4 text-center">
+                We'll get back to you within 24 hours
+              </p>
+            </form>
+          </div>
         </div>
-    </footer>
-</body>
+      </div>
+    </section>
 
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="bg-light p-8 md:p-12 rounded-lg" data-aos="fade-up">
+          <h2
+            class="text-primary font-display text-2xl md:text-3xl font-bold mb-4 text-center"
+          >
+            Visit Our Office
+          </h2>
+          <p class="text-gray-600 text-center mb-6">
+            Schedule an appointment to discuss your project in person
+          </p>
+          <div
+            class="aspect-w-16 aspect-h-9 bg-gray-300 rounded-lg overflow-hidden"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.97787155695!2d32.54287793281251!3d0.3475964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbd9f9f3a9b7b%3A0x9b1ed5c2a88e9c50!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1234567890"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="rounded-lg"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <div>
+            <h3 class="font-display text-2xl font-bold mb-4">
+              Above Architects
+            </h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Leading architectural firm in Uganda specializing in innovative
+              design and sustainable solutions.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.instagram.com/abovearchitects?igsh=MTg5anB6dHpnbzZncA=="
+                target="_blank"
+                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1"
+                ><i class="fab fa-instagram text-xl"></i
+              ></a>
+              <a
+                href="https://x.com/AshabaBenard?t=I6Y5ZosNcO9kdenc-3gTwg&s=08"
+                target="_blank"
+                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1"
+                ><i class="fab fa-twitter text-xl"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/Abovearchitects?mibextid=ZbWKwL"
+                target="_blank"
+                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1"
+                ><i class="fab fa-facebook text-xl"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@abovearchitects"
+                target="_blank"
+                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1"
+                ><i class="fab fa-youtube text-xl"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-display text-xl font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="project.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >Our Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-display text-xl font-semibold mb-4">
+              Contact Info
+            </h4>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3 text-accent"></i
+                ><a
+                  href="mailto:abovearchitects@gmail.com"
+                  class="hover:text-accent transition-colors"
+                  >abovearchitects@gmail.com</a
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3 text-accent"></i
+                ><span>Kampala, Uganda</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i
+                ><span>Serving clients across Uganda</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-white/10 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2025 Above Architects. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/256XXXXXXXXX"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 z-40"
+      ><i class="fab fa-whatsapp text-3xl"></i
+    ></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        offset: 100,
+      });
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", () => {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+          const icon = document
+            .getElementById("mobile-menu-btn")
+            .querySelector("i");
+          icon.classList.toggle("fa-bars");
+          icon.classList.toggle("fa-times");
+        });
+
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(this);
+          const name = formData.get("name");
+          const email = formData.get("email");
+          const subject = formData.get("subject");
+          const message = formData.get("message");
+
+          // Create mailto link
+          const mailtoLink = `mailto:abovearchitects@gmail.com?subject=${encodeURIComponent(
+            subject
+          )}&body=${encodeURIComponent(
+            `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+          )}`;
+          window.location.href = mailtoLink;
+
+          // Show success message
+          alert(
+            "Thank you for your message! Your default email client will open. If it doesn't, please email us directly at abovearchitects@gmail.com"
+          );
+          this.reset();
+        });
+    </script>
+  </body>
 </html>

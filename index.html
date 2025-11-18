@@ -1,172 +1,508 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en" class="scroll-smooth">
+  <head>
     <!--SEO-->
-    <meta name="author" content="AboveArchitects">
-    <meta name="keywords" content="AboveArchitects, Architecture, Interior design, Landscapping, Construction, Consultancy, ">
-    <meta property="og:title" content="Above architects -Architectural compamy">
-    <meta property="og:description" content="Explore Architecture at its best">
-    <meta property="og:image" content="IMG/AboveLogo.png">
-    <meta property="og:url" content="https://www.abovearchitects.com">
-    <meta property="og:type" content="website">
-    <link rel="apple-touch-icon" sizes="180x180" href="IMG/AboveLogo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="IMG/AboveLogo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="IMG/AboveLogo.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Architecture Website" content="Best Architecture In World">
-    <meta keys="Architecture || Idea || Issue">
-    <script src="https://kit.fontawesome.com/707ca0a07c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/mobile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AboveArchitects" />
+    <meta
+      name="description"
+      content="Above Architects - Leading architectural firm in Uganda specializing in residential, commercial, and mixed-use design. Excellence in Architecture & Design."
+    />
+    <meta
+      name="keywords"
+      content="Above Architects, Architecture Uganda, Interior design, Landscaping, Construction, Consultancy, Kampala architects, Uganda architecture"
+    />
 
-    <title>AboveArchitects- Excellence in Architecture & Design</title>
-    <link rel="shortcut icon" href="IMG/AboveLogo.png" type="image/above-icon">
-</head>
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Above Architects - Architectural Company in Uganda"
+    />
+    <meta
+      property="og:description"
+      content="Explore Architecture at its best with Above Architects Uganda"
+    />
+    <meta property="og:image" content="IMG/AboveLogo.png" />
+    <meta property="og:url" content="https://www.abovearchitects.com" />
+    <meta property="og:type" content="website" />
 
-<body>
-    <!-- Showcase -->
-    <header id="project">
-        <nav id="navbar">
-            <h3>Above Architects</h3>
-            <ul>
-                <li><a href="index.html" style="cursor: pointer;">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="showcase" class="sm-mt">
-        <div class="show-content">
-                <h3>We Are A Creative Architecture Studio </h3>
-                <a href="project.html" class="btn btn-light">View Project</a>
-            </div>
-    </section>
-    <section id="home-a">
-        <h1 class="text-center py-1">Process Team Work</h1>
-        <p class="text-center py-1 p-smart-phone">At Above architects, our team is the heart of everything we create
-        </p>
-        <div class="container process-container">
-            <div>
-                <i class='fas fa-brain fa-2x'></i>
-                <h3>Perfect Design</h3>
-                <hr>
-                <p>Perfect design is the result of a thoughtful process—our work is carefully planned, smartly executed, 
-                    and meticulously designed and tailored to bring your vision to life</p>
-            </div>
-            <div>
-                <i class='fas fa-drafting-compass fa-2x'></i>
-                <h3>Carefully Planned</h3>
-                <hr>
-                <p>Our designs are born from careful planning and a deep understanding of your needs, 
-                    Ensuring every detail is perfected to create spaces that inspire and endure</p>
-            </div>
-            <div>
-                <i class="fa fa-mobile-phone fa-2x"></i>
-                <h3>Smart Execution</h3>
-                <hr>
-                <p>Smartly executed and perfectly designed, our work reflects a deep understanding of form, function, and 
-                    the art of meticulous planning.</p>
-            </div>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="IMG/AboveLogo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="IMG/AboveLogo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="IMG/AboveLogo.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2c3e50",
+              accent: "#d4633f",
+              secondary: "#8b9d83",
+              dark: "#1a3a52",
+              light: "#f8f6f3",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Playfair Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/707ca0a07c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>
+      Above Architects - Excellence in Architecture & Design | Uganda
+    </title>
+  </head>
+
+  <body class="font-sans text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full bg-primary/95 backdrop-blur-md z-50 transition-all duration-300 shadow-lg"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="text-white font-display text-2xl lg:text-3xl font-bold tracking-wide hover:text-accent transition-colors"
+          >
+            Above Architects
+          </a>
+
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex items-center space-x-8">
+            <li>
+              <a
+                href="index.html"
+                class="text-white font-medium text-sm lg:text-base hover:text-accent transition-colors relative group"
+              >
+                Home
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="project.html"
+                class="text-white font-medium text-sm lg:text-base hover:text-accent transition-colors relative group"
+              >
+                Projects
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-white font-medium text-sm lg:text-base hover:text-accent transition-colors relative group"
+              >
+                About Us
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="text-white font-medium text-sm lg:text-base hover:text-accent transition-colors relative group"
+              >
+                Blog
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="bg-accent text-white px-6 py-2.5 rounded font-semibold text-sm lg:text-base hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
         </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-primary/98 backdrop-blur-md"
+      >
+        <ul class="px-6 py-4 space-y-3">
+          <li>
+            <a
+              href="index.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="project.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block bg-accent text-white px-6 py-2.5 rounded font-semibold text-center hover:bg-accent/90 transition-colors"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="showcase"
+      class="relative h-screen flex items-center justify-center bg-gradient-to-br from-dark/90 via-primary/85 to-primary/90 overflow-hidden"
+    >
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="photos/pexels-aleksandar-pasaric-1758672-darker.jpg"
+          alt="Architecture"
+          class="w-full h-full object-cover opacity-30"
+        />
+      </div>
+
+      <!-- Overlay Pattern -->
+      <div
+        class="absolute inset-0 z-0 opacity-10"
+        style="
+          background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+        "
+      ></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 text-center px-6 max-w-5xl mx-auto"
+        data-aos="fade-up"
+      >
+        <h1
+          class="text-white font-display text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-lg"
+        >
+          We Are A Creative<br />Architecture Studio
+        </h1>
+        <p
+          class="text-white/90 text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed"
+        >
+          Transforming visions into exceptional spaces across Uganda with
+          innovative design and sustainable solutions
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="project.html"
+            class="inline-block bg-white text-primary px-8 py-4 rounded font-bold text-base hover:bg-light hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+          >
+            View Our Projects
+          </a>
+          <a
+            href="contact.html"
+            class="inline-block border-2 border-white text-white px-8 py-4 rounded font-bold text-base hover:bg-white hover:text-primary hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+          >
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <i class="fas fa-chevron-down text-white text-3xl opacity-70"></i>
+      </div>
+    </section>
+
+    <!-- Process/Services Section -->
+    <section id="home-a" class="py-20 bg-light">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2
+            class="text-primary font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+          >
+            Our Process & Expertise
+          </h2>
+          <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
+            At Above Architects, our team is the heart of everything we create
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="text-accent text-5xl mb-6">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3 class="text-primary font-display text-2xl font-semibold mb-4">
+              Perfect Design
+            </h3>
+            <div class="w-16 h-1 bg-accent mb-6"></div>
+            <p class="text-gray-600 leading-relaxed">
+              Perfect design is the result of a thoughtful process—our work is
+              carefully planned, smartly executed, and meticulously designed and
+              tailored to bring your vision to life
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="text-accent text-5xl mb-6">
+              <i class="fas fa-drafting-compass"></i>
+            </div>
+            <h3 class="text-primary font-display text-2xl font-semibold mb-4">
+              Carefully Planned
+            </h3>
+            <div class="w-16 h-1 bg-accent mb-6"></div>
+    
+    <!-- Stats Section -->
+    <section id="home-b" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-primary font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Our Achievements</h2>
+          <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
+            We are proud of what we have achieved so far!
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-0 max-w-5xl mx-auto rounded-lg overflow-hidden shadow-xl">
+          <div class="bg-light p-8 md:p-12 text-center hover:bg-accent hover:text-white transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-home text-4xl md:text-5xl text-accent group-hover:text-white mb-4 transition-colors"></i>
+            <h3 class="text-primary group-hover:text-white font-display text-3xl md:text-4xl font-bold mb-2 transition-colors">29</h3>
+            <p class="text-gray-700 group-hover:text-white font-medium transition-colors">Projects Built</p>
+          </div>
+          
+          <div class="bg-white p-8 md:p-12 text-center hover:bg-accent hover:text-white transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-clock text-4xl md:text-5xl text-accent group-hover:text-white mb-4 transition-colors"></i>
+            <h3 class="text-primary group-hover:text-white font-display text-3xl md:text-4xl font-bold mb-2 transition-colors">27,698</h3>
+            <p class="text-gray-700 group-hover:text-white font-medium transition-colors">Hours of Work</p>
+          </div>
+          
+          <div class="bg-light p-8 md:p-12 text-center hover:bg-accent hover:text-white transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-user-friends text-4xl md:text-5xl text-accent group-hover:text-white mb-4 transition-colors"></i>
+            <h3 class="text-primary group-hover:text-white font-display text-3xl md:text-4xl font-bold mb-2 transition-colors">57</h3>
+            <p class="text-gray-700 group-hover:text-white font-medium transition-colors">Best Engineers</p>
+          </div>
+          
+          <div class="bg-white p-8 md:p-12 text-center hover:bg-accent hover:text-white transition-all duration-300 group" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-archway text-4xl md:text-5xl text-accent group-hover:text-white mb-4 transition-colors"></i>
+            <h3 class="text-primary group-hover:text-white font-display text-3xl md:text-4xl font-bold mb-2 transition-colors">3</h3>
+            <p class="text-gray-700 group-hover:text-white font-medium transition-colors">Towers Built</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="home-b">
-        <h1 class="text-center py-1">Features Team</h1>
-        <p class="text-center py-1 p-smart-phone">We are proud of what we have achieved so far!
-            </p>
-        <div class="features-container py-3 text-center">
-            <div>
-                <i class='fas fa-home fa-2x'></i>
-                <h3>29</h3>
-                <h3> Projects Built</h3>
-            </div>
-            <div>
-                <i class='fas fa-clock fa-2x'></i>
-                <h3>27,698</h3>
-                <h3> Hours of Work</h3>
-            </div>
-            <div>
-                <i class='fas fa-user-friends fa-2x'></i>
-                <h3>57 </h3>
-                <h3>Best engineers</h3>
-            </div>
-            <div>
-                <i class='fas fa-archway fa-2x'></i>
-                <h3>3 </h3>
-                <h3>Build Tower</h3>
-            </div>
+      <h1 class="text-center py-1">Features Team</h1>
+      <p class="text-center py-1 p-smart-phone">
+        We are proud of what we have achieved so far!
+      </p>
+      <div class="features-container py-3 text-center">
+        <div>
+          <i class="fas fa-home fa-2x"></i>
+          <h3>29</h3>
+          <h3>Projects Built</h3>
         </div>
+        <div>
+          <i class="fas fa-clock fa-2x"></i>
+          <h3>27,698</h3>
+          <h3>Hours of Work</h3>
+        </div>
+        <div>
+          <i class="fas fa-user-friends fa-2x"></i>
+          <h3>57</h3>
+          <h3>Best engineers</h3>
+        </div>
+        <div>
+          <i class="fas fa-archway fa-2x"></i>
+          <h3>3</h3>
+          <h3>Build Tower</h3>
+        </div>
+      </div>
     </section>
-    <!--<section id="home-c" class="text-center py-3">
-        <h1>Some of our global honors</h1>
-        <div class="container award-grid">
-            <div>
-                <i class='fas fa-award fa-2x'></i>
-                <h3>In 2020</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur a ipsa atque nesciunt
-                    exercitationem quas ipsum architecto cupiditate id?</p>
-            </div>
-            <div>
-                <i class='fas fa-award fa-2x'></i>
-                <h3>In 2019</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur a ipsa atque nesciunt
-                    exercitationem quas ipsum architecto cupiditate id?</p>
-            </div>
-            <div>
-                <i class='fas fa-award fa-2x'></i>
-                <h3>In 2018</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur a ipsa atque nesciunt
-                    exercitationem quas ipsum architecto cupiditate id?</p>
-            </div>
-        </div>
-    </section>-->
-    <section id="home-d">
-        <div class="word-content text-center">
-            <h3 class="text-center"> Are you ready to create awesome Architecture with AboveArchitects?</h3>
-            <a href="project.html" class="btn btn-dark my-1">join Us Let's Start</a>
-            
-        </div>
-    </section>
-    <footer id="main-footer">
-        
-        <div class="container text-center">
-            
-            <ul>
-                <li>&copy; 2025 AboveArchitects. All rights reserved.</li>
-
-                <ul class="social-footer" style="list-style: none; display: flex; gap: 15px; padding: 0;">
-                    <li>
-                      <a href="https://www.instagram.com/abovearchitects?igsh=MTg5anB6dHpnbzZncA==" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram" style="font-size: 24px; color: #E1306C;"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://x.com/AshabaBenard?t=I6Y5ZosNcO9kdenc-3gTwg&s=08" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-twitter" style="font-size: 24px; color: #1DA1F2;"></i>
-                        
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/Abovearchitects?mibextid=ZbWKwL" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook" style="font-size: 24px; color: #1877F2;"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/@abovearchitects" target="_blank" aria-label="YouTube">
-                        <i class="fab fa-youtube" style="font-size: 24px; color: #FF0000;"></i>
-                      </a>
-                    </li>
-                  </ul>
-                
-            </ul>
-        </div>
-    </footer>
     
-</body>
+    <!-- Call to Action Section -->
+    <section id="home-d" class="relative py-24 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-accent via-accent/90 to-accent/80"></div>
+      <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center" data-aos="zoom-in">
+        <h2 class="text-white font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-4xl mx-auto leading-tight">
+          Are You Ready to Create Awesome Architecture with Above Architects?
+        </h2>
+        <p class="text-white/90 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+          Let's bring your vision to life with innovative design and exceptional craftsmanship
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="project.html" class="inline-block bg-white text-accent px-10 py-4 rounded-lg font-bold text-base hover:bg-light hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            View Our Work
+          </a>
+          <a href="contact.html" class="inline-block border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-base hover:bg-white hover:text-accent hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            Start Your Project
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <!-- Company Info -->
+          <div>
+            <h3 class="font-display text-2xl font-bold mb-4">Above Architects</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Leading architectural firm in Uganda specializing in innovative design and sustainable solutions for residential, commercial, and mixed-use projects.
+            </p>
+            <div class="flex space-x-4">
+              <a href="https://www.instagram.com/abovearchitects?igsh=MTg5anB6dHpnbzZncA==" target="_blank" aria-label="Instagram" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="https://x.com/AshabaBenard?t=I6Y5ZosNcO9kdenc-3gTwg&s=08" target="_blank" aria-label="Twitter" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1">
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+              <a href="https://www.facebook.com/Abovearchitects?mibextid=ZbWKwL" target="_blank" aria-label="Facebook" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1">
+                <i class="fab fa-facebook text-xl"></i>
+              </a>
+              <a href="https://www.youtube.com/@abovearchitects" target="_blank" aria-label="YouTube" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1">
+                <i class="fab fa-youtube text-xl"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-display text-xl font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html" class="text-gray-300 hover:text-accent transition-colors">Home</a></li>
+              <li><a href="project.html" class="text-gray-300 hover:text-accent transition-colors">Our Projects</a></li>
+              <li><a href="about.html" class="text-gray-300 hover:text-accent transition-colors">About Us</a></li>
+              <li><a href="blog.html" class="text-gray-300 hover:text-accent transition-colors">Blog</a></li>
+              <li><a href="contact.html" class="text-gray-300 hover:text-accent transition-colors">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact Info -->
+          <div>
+            <h4 class="font-display text-xl font-semibold mb-4">Contact Info</h4>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3 text-accent"></i>
+                <a href="mailto:abovearchitects@gmail.com" class="hover:text-accent transition-colors">abovearchitects@gmail.com</a>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3 text-accent"></i>
+                <span>Kampala, Uganda</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                <span>Serving clients across Uganda</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="border-t border-white/10 pt-8 text-center">
+          <p class="text-gray-400">&copy; 2025 Above Architects. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/256XXXXXXXXX" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 z-40" aria-label="Contact us on WhatsApp">
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+      });
+
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        const icon = mobileMenuBtn.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+      });
+
+      // Navbar Scroll Effect
+      window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 100) {
+          navbar.classList.add('shadow-2xl');
+        } else {
+          navbar.classList.remove('shadow-2xl');
+        }
+      });
+    </script>
+  </body>
 </html>

@@ -1,133 +1,775 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Above Architects' portfolio of innovative architectural projects across Uganda - Residential, Commercial, and Mixed-Use developments"
+    />
+    <meta
+      name="keywords"
+      content="Architecture projects Uganda, Above Architects portfolio, architectural designs Kampala"
+    />
+    <meta
+      property="og:title"
+      content="Our Projects - Above Architects Uganda"
+    />
+    <meta
+      property="og:description"
+      content="View our portfolio of exceptional architectural projects"
+    />
+    <link rel="icon" type="image/png" href="IMG/AboveLogo.png" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Architecture Website" content="Best Architecture In World">
-    <meta keys="Architecture || Idea || Issue">
-    <script src="https://kit.fontawesome.com/707ca0a07c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/mobile.css">
-    <title>Projects</title>
-    <link rel="shortcut icon" href="IMG/AboveLogo.png" type="image/above-icon">
-</head>
-
-<body>
-    <header id="project">
-        <nav id="navbar">
-            <h3>Above Architects</h3>
-            <ul>
-                <li><a href="index.html" style="cursor: pointer;">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="project-a" class="sm-mt">
-        <div class="container">
-            <h1 class="text-center py-2">Some of our projects</h1>
-            <div class="items">
-                <div class="item">
-                    <img src="IMG/design5.jpg" alt="ProjectOne">
-                    <p class="text-title text-center">Proposed 3 bedroomed Residential house
-                    </p>
-                    <p class="text-title text-center">Location:Seeta, Bajjo, Mukono District</p>
-                    <p class="text-title text-center">Status: Under construction</p>
-                </div>
-                <div class="item">
-                    <img src="IMG/design3.jpg" alt="ProjectTwo">
-                    <p class="text-title text-center">Proposed cottage unit
-                    </p>
-                    <p class="text-title text-center">Location:Mityana District. </p>
-                    <p class="text-title text-center">Status:Final Design Stages </p>
-                </div>
-                <div class="item">
-                    <img src="IMG/img15.jpg" alt="ProjectThree">
-                    <p class="text-title text-center">Proposed Residential House</p>
-                    <p class="text-title text-center">Location:Kasenyi, Entebbe</p>
-                    <p class="text-title text-center">Status: Under Construction</p>
-                </div>
-                <div class="item">
-                    <img src="IMG/condomonium.jpeg" alt="ProjectFour">
-                    <p class="text-title text-center">Proposed 2 & 3 Bedroom Condominium Apartment
-                    </p>
-                    <p class="text-title text-center">Location: Najjera, Wakiso</p>
-                    <p class="text-title text-center">Status: Submitted for Approval</p>
-                </div>
-                <div class="item">
-                    <img src="IMG/comm1.jpg" alt="ProjectFive">
-                    <p class="text-title text-center">Proposed Commercial Building
-                    </p>
-                    <p class="text-title text-center">Build in: 2018</p>
-                </div>
-                <div class="item">
-                    <img src="IMG/gayaza.jpeg" alt="ProjectSix">
-                    <p class="text-title text-center">Proposed Residential House 
-                    </p>
-                    <p class="text-title text-center">Location: Gayaza</p>
-                    <p class="text-title text-center">Status: Construction</p>
-                </div>
-                <div class="item">
-                    <img src="IMG/mixed.jpeg" alt="ProjectSeven">
-                    <p class="text-title text-center">Proposed Mixed Use Project
-                    </p>
-                    <p class="text-title text-center">Location: Jinja</p>
-                    <p class="text-title text-center">Status: Under Construction</p>
-                </div>
-                <div class="item">
-                    <img src="IMG/apartment.jpeg" alt="ProjectEight">
-                    <p class="text-title text-center">Proposed Apartment Block
-                    </p>
-                    <p class="text-title text-center">Location: Mbalwa Bweyogerere, Wakiso</p>
-                    <p class="text-title text-center">Status: Final Finishes</p>
-                </div>
-                <div class="item">
-                    <img src="IMG/Bedroom.jpeg" alt="ProjectNine">
-                    <p class="text-title text-center">Proposed 3 Bedroom Apartment
-                    </p>
-                    <p class="text-title text-center">Location: Bukoto, Kampala</p>
-                    <p class="text-title text-center">Status: Submitted for Approval</p>
-                </div>
-            </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2c3e50",
+              accent: "#d4633f",
+              secondary: "#8b9d83",
+              dark: "#1a3a52",
+              light: "#f8f6f3",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Playfair Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/707ca0a07c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Our Projects - Above Architects Uganda</title>
+  </head>
+  <body class="font-sans text-gray-800 antialiased bg-light">
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full bg-primary/95 backdrop-blur-md z-50 shadow-lg"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a
+            href="index.html"
+            class="text-white font-display text-2xl lg:text-3xl font-bold tracking-wide hover:text-accent transition-colors"
+            >Above Architects</a
+          >
+          <ul class="hidden md:flex items-center space-x-8">
+            <li>
+              <a
+                href="index.html"
+                class="text-white font-medium hover:text-accent transition-colors relative group"
+                >Home<span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a href="project.html" class="text-accent font-medium relative"
+                >Projects<span
+                  class="absolute bottom-0 left-0 w-full h-0.5 bg-accent"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-white font-medium hover:text-accent transition-colors relative group"
+                >About Us<span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="text-white font-medium hover:text-accent transition-colors relative group"
+                >Blog<span
+                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="bg-accent text-white px-6 py-2.5 rounded font-semibold hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
         </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-primary/98 backdrop-blur-md"
+      >
+        <ul class="px-6 py-4 space-y-3">
+          <li>
+            <a
+              href="index.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="project.html" class="block text-accent font-medium py-2"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="block text-white font-medium py-2 hover:text-accent transition-colors"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block bg-accent text-white px-6 py-2.5 rounded font-semibold text-center hover:bg-accent/90 transition-colors"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      class="pt-32 pb-20 bg-gradient-to-br from-primary to-dark text-white"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-8 text-center"
+        data-aos="fade-up"
+      >
+        <h1
+          class="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+        >
+          Our Projects
+        </h1>
+        <p class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+          Explore our portfolio of innovative architectural designs across
+          Uganda
+        </p>
+      </div>
     </section>
 
-    <footer id="main-footer">
-        <div class="container text-center">
-            <img src="photos/AboveLogo.png" alt="" style="width: 195px;height: 51px;">
-            <ul>
-                <li>&copy; 2025 AboveArchitects. All rights reserved.</li>
-                <ul class="social-footer" style="list-style: none; display: flex; gap: 15px; padding: 0;">
-                    <li>
-                      <a href="https://www.instagram.com/abovearchitects?igsh=MTg5anB6dHpnbzZncA==" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram" style="font-size: 24px; color: #E1306C;"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://x.com/AshabaBenard?t=I6Y5ZosNcO9kdenc-3gTwg&s=08" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-twitter" style="font-size: 24px; color: #1DA1F2;"></i>
-                        
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/Abovearchitects?mibextid=ZbWKwL" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook" style="font-size: 24px; color: #1877F2;"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/@abovearchitects" target="_blank" aria-label="YouTube">
-                        <i class="fab fa-youtube" style="font-size: 24px; color: #FF0000;"></i>
-                      </a>
-                    </li>
-                  </ul>
-                
-            </ul>
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div
+          class="flex flex-wrap justify-center gap-4 mb-16"
+          data-aos="fade-up"
+        >
+          <button
+            class="filter-btn active px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-all"
+            data-filter="all"
+          >
+            All Projects
+          </button>
+          <button
+            class="filter-btn px-6 py-3 rounded-lg bg-white text-primary font-semibold hover:bg-accent hover:text-white transition-all"
+            data-filter="residential"
+          >
+            Residential
+          </button>
+          <button
+            class="filter-btn px-6 py-3 rounded-lg bg-white text-primary font-semibold hover:bg-accent hover:text-white transition-all"
+            data-filter="commercial"
+          >
+            Commercial
+          </button>
+          <button
+            class="filter-btn px-6 py-3 rounded-lg bg-white text-primary font-semibold hover:bg-accent hover:text-white transition-all"
+            data-filter="mixed"
+          >
+            Mixed-Use
+          </button>
         </div>
-    </footer>
-</body>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="project-item residential group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden h-72">
+                <img
+                  src="IMG/design5.jpg"
+                  alt="3 Bedroom Residential House"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+                >
+                  <span
+                    class="inline-block bg-accent px-3 py-1 rounded-full text-sm font-semibold text-white"
+                    >Residential</span
+                  >
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-display text-2xl font-semibold text-primary mb-3"
+                >
+                  Proposed 3 Bedroom Residential House
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                    Seeta, Bajjo, Mukono District
+                  </p>
+                  <p class="flex items-center">
+                    <i class="fas fa-hard-hat text-accent mr-2"></i> Under
+                    Construction
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-item residential"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden h-72">
+                <img
+                  src="IMG/design3.jpg"
+                  alt="Cottage Unit"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+                >
+                  <span
+                    class="inline-block bg-accent px-3 py-1 rounded-full text-sm font-semibold text-white"
+                    >Residential</span
+                  >
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-display text-2xl font-semibold text-primary mb-3"
+                >
+                  Proposed Cottage Unit
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                    Mityana District
+                  </p>
+                  <p class="flex items-center">
+                    <i class="fas fa-pencil-ruler text-accent mr-2"></i> Final
+                    Design Stages
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-item residential"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden h-72">
+                <img
+                  src="IMG/img15.jpg"
+                  alt="Residential House Entebbe"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+                >
+                  <span
+                    class="inline-block bg-accent px-3 py-1 rounded-full text-sm font-semibold text-white"
+                    >Residential</span
+                  >
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-display text-2xl font-semibold text-primary mb-3"
+                >
+                  Proposed Residential House
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                    Kasenyi, Entebbe
+                  </p>
+                  <p class="flex items-center">
+                    <i class="fas fa-hard-hat text-accent mr-2"></i> Under
+                    Construction
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-item residential mixed"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden h-72">
+                <img
+                  src="IMG/condomonium.jpeg"
+                  alt="Condominium Apartment"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+                >
+                  <span
+                    class="inline-block bg-accent px-3 py-1 rounded-full text-sm font-semibold text-white"
+                    >Mixed-Use</span
+                  >
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-display text-2xl font-semibold text-primary mb-3"
+                >
+                  Proposed 2 & 3 Bedroom Condominium
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                    Najjera, Wakiso
+                  </p>
+                  <p class="flex items-center">
+                    <i class="fas fa-clipboard-check text-accent mr-2"></i>
+                    Submitted for Approval
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-item commercial"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden h-72">
+                <img
+                  src="IMG/comm1.jpg"
+                  alt="Commercial Building"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+                >
+                  <span
+                    class="inline-block bg-accent px-3 py-1 rounded-full text-sm font-semibold text-white"
+                    >Commercial</span
+                  >
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-display text-2xl font-semibold text-primary mb-3"
+                >
+                  Proposed Commercial Building
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="flex items-center">
+                    <i class="fas fa-calendar text-accent mr-2"></i> Built in
+                    2018
+                  </p>
+                  <p class="flex items-center">
+                    <i class="fas fa-check-circle text-accent mr-2"></i>
+                    Completed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-item residential"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden h-72">
+                <img
+                  src="IMG/gayaza.jpeg"
+                  alt="Gayaza Residential"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+                >
+                  <span
+                    class="inline-block bg-accent px-3 py-1 rounded-full text-sm font-semibold text-white"
+                    >Residential</span
+                  >
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-display text-2xl font-semibold text-primary mb-3"
+                >
+                  Proposed Residential House
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                    Gayaza
+                  </p>
+                  <p class="flex items-center">
+                    <i class="fas fa-hard-hat text-accent mr-2"></i> Under
+                    Construction
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-item mixed"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden h-72">
+                <img
+                  src="IMG/mixed.jpeg"
+                  alt="Mixed Use Jinja"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+                >
+                  <span
+                    class="inline-block bg-accent px-3 py-1 rounded-full text-sm font-semibold text-white"
+                    >Mixed-Use</span
+                  >
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-display text-2xl font-semibold text-primary mb-3"
+                >
+                  Proposed Mixed Use Project
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2"></i> Jinja
+                  </p>
+                  <p class="flex items-center">
+                    <i class="fas fa-hard-hat text-accent mr-2"></i> Under
+                    Construction
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-item residential mixed"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden h-72">
+                <img
+                  src="IMG/apartment.jpeg"
+                  alt="Apartment Block"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+                >
+                  <span
+                    class="inline-block bg-accent px-3 py-1 rounded-full text-sm font-semibold text-white"
+                    >Residential</span
+                  >
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-display text-2xl font-semibold text-primary mb-3"
+                >
+                  Proposed Apartment Block
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                    Mbalwa, Bweyogerere, Wakiso
+                  </p>
+                  <p class="flex items-center">
+                    <i class="fas fa-paint-brush text-accent mr-2"></i> Final
+                    Finishes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-item residential"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden h-72">
+                <img
+                  src="IMG/Bedroom.jpeg"
+                  alt="3 Bedroom Apartment"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6"
+                >
+                  <span
+                    class="inline-block bg-accent px-3 py-1 rounded-full text-sm font-semibold text-white"
+                    >Residential</span
+                  >
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-display text-2xl font-semibold text-primary mb-3"
+                >
+                  Proposed 3 Bedroom Apartment
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                    Bukoto, Kampala
+                  </p>
+                  <p class="flex items-center">
+                    <i class="fas fa-clipboard-check text-accent mr-2"></i>
+                    Submitted for Approval
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-br from-accent to-accent/80">
+      <div class="max-w-4xl mx-auto px-6 text-center" data-aos="zoom-in">
+        <h2 class="text-white font-display text-3xl md:text-4xl font-bold mb-6">
+          Have a Project in Mind?
+        </h2>
+        <p class="text-white/90 text-lg md:text-xl mb-8">
+          Let's turn your architectural vision into reality
+        </p>
+        <a
+          href="contact.html"
+          class="inline-block bg-white text-accent px-10 py-4 rounded-lg font-bold text-base hover:bg-light hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+          >Start Your Project</a
+        >
+      </div>
+    </section>
+
+    <footer class="bg-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <div>
+            <h3 class="font-display text-2xl font-bold mb-4">
+              Above Architects
+            </h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Leading architectural firm in Uganda specializing in innovative
+              design and sustainable solutions.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.instagram.com/abovearchitects?igsh=MTg5anB6dHpnbzZncA=="
+                target="_blank"
+                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1"
+                ><i class="fab fa-instagram text-xl"></i
+              ></a>
+              <a
+                href="https://x.com/AshabaBenard?t=I6Y5ZosNcO9kdenc-3gTwg&s=08"
+                target="_blank"
+                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1"
+                ><i class="fab fa-twitter text-xl"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/Abovearchitects?mibextid=ZbWKwL"
+                target="_blank"
+                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1"
+                ><i class="fab fa-facebook text-xl"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@abovearchitects"
+                target="_blank"
+                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-all duration-300 hover:-translate-y-1"
+                ><i class="fab fa-youtube text-xl"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-display text-xl font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="project.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >Our Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-display text-xl font-semibold mb-4">
+              Contact Info
+            </h4>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3 text-accent"></i
+                ><a
+                  href="mailto:abovearchitects@gmail.com"
+                  class="hover:text-accent transition-colors"
+                  >abovearchitects@gmail.com</a
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3 text-accent"></i
+                ><span>Kampala, Uganda</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i
+                ><span>Serving clients across Uganda</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-white/10 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2025 Above Architects. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/256XXXXXXXXX"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 z-40"
+      ><i class="fab fa-whatsapp text-3xl"></i
+    ></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        offset: 100,
+      });
+
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", () => {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+          const icon = document
+            .getElementById("mobile-menu-btn")
+            .querySelector("i");
+          icon.classList.toggle("fa-bars");
+          icon.classList.toggle("fa-times");
+        });
+
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".filter-btn").forEach((b) => {
+            b.classList.remove("active", "bg-accent", "text-white");
+            b.classList.add("bg-white", "text-primary");
+          });
+          btn.classList.add("active", "bg-accent", "text-white");
+          btn.classList.remove("bg-white", "text-primary");
+
+          const filter = btn.getAttribute("data-filter");
+          document.querySelectorAll(".project-item").forEach((item) => {
+            item.style.display =
+              filter === "all" || item.classList.contains(filter)
+                ? "block"
+                : "none";
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
