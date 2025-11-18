@@ -29,12 +29,9 @@
       const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
-        const navHeight = document.querySelector('nav').offsetHeight;
-        const targetPosition = target.offsetTop - navHeight;
-
-        window.scrollTo({
-          top: targetPosition,
+        target.scrollIntoView({
           behavior: 'smooth',
+          block: 'start',
         });
       }
     });
@@ -44,32 +41,17 @@
   // 3. NAVBAR SCROLL EFFECT
   // ==========================================
   const navbar = document.getElementById('navbar');
-  let lastScroll = 0;
 
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    // Add shadow on scroll
+    // Add enhanced shadow on scroll
     if (currentScroll > 100) {
       navbar.classList.add('navbar-scrolled');
     } else {
       navbar.classList.remove('navbar-scrolled');
     }
-
-    // Hide navbar on scroll down, show on scroll up
-    if (currentScroll > lastScroll && currentScroll > 200) {
-      navbar.style.transform = 'translateY(-100%)';
-    } else {
-      navbar.style.transform = 'translateY(0)';
-    }
-
-    lastScroll = currentScroll;
   });
-
-  // Smooth navbar transition
-  if (navbar) {
-    navbar.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
-  }
 
   // ==========================================
   // 4. MOBILE MENU ENHANCEMENTS
